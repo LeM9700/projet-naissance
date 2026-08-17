@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Projet de naissance</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Jeu d'icônes réutilisées comme repères visuels cohérents dans tout le document -->
+<svg class="icon-defs" aria-hidden="true">
+  <defs>
+    <symbol id="icon-hand" viewBox="0 0 24 24"><path d="M7 12V5.5a1.2 1.2 0 0 1 2.4 0V11M9.4 11V4.3a1.2 1.2 0 0 1 2.4 0V11M11.8 11V5.2a1.2 1.2 0 0 1 2.4 0V12M14.2 12V7a1.2 1.2 0 0 1 2.4 0v6.5M7 12.5c0 4 2.8 7 6.3 7h.4c3.5 0 5.9-2.8 5.9-6.3V11"/></symbol>
+    <symbol id="icon-link" viewBox="0 0 24 24"><path d="M8.5 8.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM17 9a2.4 2.4 0 1 0 0 4.8 2.4 2.4 0 0 0 0-4.8zM3.5 20c.3-3.4 2.5-5.5 5-5.5s4.7 2.1 5 5.5M13.8 20c.3-2.8 2-4.6 4-4.6"/></symbol>
+    <symbol id="icon-chat" viewBox="0 0 24 24"><path d="M4 5.5h16a1 1 0 0 1 1 1V15a1 1 0 0 1-1 1H10l-4.2 3.5a.5.5 0 0 1-.8-.4V16H4a1 1 0 0 1-1-1V6.5a1 1 0 0 1 1-1z"/></symbol>
+    <symbol id="icon-heart" viewBox="0 0 24 24"><path d="M12 21c-.3 0-.6-.1-.8-.3C7 17.4 3 13.9 3 9.9 3 7.2 5.1 5 7.8 5c1.7 0 3.2.9 4.2 2.3C13 5.9 14.5 5 16.2 5 18.9 5 21 7.2 21 9.9c0 4-4 7.5-8.2 10.8-.2.2-.5.3-.8.3z"/></symbol>
+    <symbol id="icon-home" viewBox="0 0 24 24"><path d="M4 11.5 12 4l8 7.5M6 10v9h12v-9"/></symbol>
+    <symbol id="icon-moon" viewBox="0 0 24 24"><path d="M20 14.2A8.5 8.5 0 1 1 9.8 4a6.6 6.6 0 0 0 10.2 10.2z"/></symbol>
+    <symbol id="icon-wind" viewBox="0 0 24 24"><path d="M3 8h11a2.5 2.5 0 1 0-2.5-2.5M3 12.5h15a2.5 2.5 0 1 1-2.5 2.5M3 17h9"/></symbol>
+    <symbol id="icon-drop" viewBox="0 0 24 24"><path d="M12 3.5s6 6.8 6 11a6 6 0 0 1-12 0c0-4.2 6-11 6-11z"/></symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 3l7 2.8v5.4c0 5-3 8.4-7 9.8-4-1.4-7-4.8-7-9.8V5.8L12 3z"/></symbol>
+    <symbol id="icon-spark" viewBox="0 0 24 24"><path d="M12 3v3.5M12 17.5V21M4.2 12H7.7M16.3 12h3.5M6.3 6.3l2.5 2.5M15.2 15.2l2.5 2.5M17.7 6.3l-2.5 2.5M8.8 15.2l-2.5 2.5"/></symbol>
+    <symbol id="icon-cross" viewBox="0 0 24 24"><path d="M12 3.5a8.5 8.5 0 1 0 0 17 8.5 8.5 0 0 0 0-17zM12 8v8M8 12h8"/></symbol>
+    <symbol id="icon-leaf" viewBox="0 0 24 24"><path d="M5 19c8 0 14-6 14-14 0-.6 0-1.2-.1-1.8C10.4 3.6 5 9 5 17c0 .7 0 1.4.1 2zM5 19c2-3 5-6 9-8"/></symbol>
+  </defs>
+</svg>
+
+<div class="intro-banner">
+  <p>« Nous voulons un accouchement calme, soutenu, respecté et informé »</p>
+</div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="header-text">
+      <p class="eyebrow">Document privé — usage médical</p>
+      <h1>Projet de naissance</h1>
+      <p class="subtitle">Pour l'équipe médicale et les personnes qui nous accompagneront le jour de l'accouchement</p>
+    </div>
+    <button class="print-button no-print" aria-label="Imprimer ou enregistrer en PDF">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v7H6z"/></svg>
+      Imprimer / Enregistrer en PDF
+    </button>
+  </div>
+</header>
+
+<nav class="toc no-print" aria-label="Sommaire">
+  <ul>
+    <li><a href="#resume">Résumé</a></li>
+    <li><a href="#intention">Intention</a></li>
+    <li><a href="#papa">Rôle du papa</a></li>
+    <li><a href="#arrivee">À notre arrivée</a></li>
+    <li><a href="#environnement">Environnement &amp; mouvement</a></li>
+    <li><a href="#travail">Pendant le travail</a></li>
+    <li><a href="#douleur">Face à la douleur</a></li>
+    <li><a href="#urgence">En cas d'imprévu</a></li>
+    <li><a href="#naissance">Naissance</a></li>
+    <li><a href="#cesarienne">Si césarienne</a></li>
+    <li><a href="#premiers-instants">Premiers instants</a></li>
+    <li><a href="#alimentation">Alimentation</a></li>
+    <li><a href="#suites">Suites de couches</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <!-- Page 1 — résumé exécutif : lisible en 20 secondes -->
+  <section id="resume" class="cover">
+    <dl class="cover-identity">
+      <div><dt>Date prévue d'accouchement</dt><dd>10 septembre 2026</dd></div>
+      <div><dt>Maternité</dt><dd>Polyclinique Grand Sud, Nîmes</dd></div>
+      <div><dt>Grossesse</dt><dd>Simple, sans particularité connue</dd></div>
+      <div><dt>Bébé</dt><dd>1</dd></div>
+      <div><dt>Personne autorisée</dt><dd>Le papa</dd></div>
+    </dl>
+
+    <p class="need-line"><strong>Un vaginisme connu et le besoin d'être informées à chaque étape</strong> orientent l'ensemble de nos souhaits ci-dessous.</p>
+    <p class="solution-line">Ce document sert de repère commun entre nous et l'équipe qui nous accompagnera le jour J.</p>
+
+    <div class="pillars">
+      <div class="pillar">
+        <span class="pillar-icon"><svg class="icon"><use href="#icon-hand"/></svg></span>
+        <h3>Le corps</h3>
+        <p>Touchers vaginaux réduits au strict nécessaire ; pas d'instrument, pas d'épisiotomie ni d'expression abdominale si possible.</p>
+      </div>
+      <div class="pillar">
+        <span class="pillar-icon"><svg class="icon"><use href="#icon-link"/></svg></span>
+        <h3>La présence</h3>
+        <p>Le papa présent et impliqué en continu ; il coupe le cordon et suit le bébé en cas de séparation.</p>
+      </div>
+      <div class="pillar">
+        <span class="pillar-icon"><svg class="icon"><use href="#icon-chat"/></svg></span>
+        <h3>L'information</h3>
+        <p>Une explication avant chaque geste, un environnement calme et une lumière tamisée.</p>
+      </div>
+      <div class="pillar">
+        <span class="pillar-icon"><svg class="icon"><use href="#icon-heart"/></svg></span>
+        <h3>Le démarrage</h3>
+        <p>Peau-à-peau immédiat, allaitement exclusif accompagné, et le souhait de tenir sans péridurale le plus longtemps possible.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="intention" class="card">
+    <h2><span class="num"><svg class="icon"><use href="#icon-chat"/></svg></span>Intention générale</h2>
+    <p>Nous souhaitons que le jour de l'accouchement soit vécu avec le plus de calme, de sécurité et de douceur possible. Nous voulons une équipe qui nous écoute, nous explique, nous accompagne et nous aide à rester présents et rassurés.</p>
+    <div class="two-col">
+      <div class="pill-box helps">
+        <h3>Ce qui nous aide</h3>
+        <ul class="plain-list">
+          <li>Des explications claires et simples</li>
+          <li>Une communication calme, des voix apaisantes</li>
+          <li>La présence constante du papa</li>
+          <li>Une liberté de mouvement</li>
+          <li>Du temps pour respirer et se recentrer</li>
+        </ul>
+      </div>
+      <div class="pill-box worries">
+        <h3>Ce qui nous inquiète</h3>
+        <ul class="plain-list">
+          <li>Le manque d'écoute</li>
+          <li>Des gestes trop rapides</li>
+          <li>La perte de contrôle</li>
+          <li>Un imprévu médical</li>
+          <li>La séparation mère-bébé</li>
+          <li>Un échange de bébé</li>
+        </ul>
+      </div>
+    </div>
+    <p class="callout-line">Nous restons ouverts à l'adaptation si la sécurité le commande.</p>
+  </section>
+
+  <section id="papa" class="card highlight-card">
+    <h2><span class="num"><svg class="icon"><use href="#icon-link"/></svg></span>Rôle du papa</h2>
+    <p class="section-lead">Présent à chaque étape, voici comment il nous accompagne :</p>
+    <ul class="plain-list">
+      <li class="strict">Présence continue</li>
+      <li>Aide aux positions, massage, respiration, hydratation</li>
+      <li>Relais des préférences si la maman est trop concentrée</li>
+      <li>Accompagne le bébé si une séparation est nécessaire</li>
+    </ul>
+  </section>
+
+  <section id="arrivee" class="card">
+    <h2><span class="num"><svg class="icon"><use href="#icon-home"/></svg></span>À notre arrivée</h2>
+
+    <h3>Quand partir</h3>
+    <ul class="plain-list">
+      <li>Partir à la maternité dès les contractions régulières, la perte des eaux ou une douleur difficile à gérer</li>
+      <li>Prévenir l'équipe avant l'arrivée</li>
+      <li>Résumé court à l'admission</li>
+    </ul>
+
+    <h3>À l'accueil</h3>
+    <ul class="plain-list">
+      <li>Accueil calme et non stressant</li>
+      <li>Explications reformulées à l'oral avant application</li>
+    </ul>
+
+    <h3>Discrétion &amp; continuité</h3>
+    <ul class="plain-list">
+      <li>Limiter les entrées et sorties non nécessaires</li>
+      <li>Séparer les intervenants à chaque relais de garde</li>
+      <li>Refus de présence d'étudiants ou observateurs</li>
+    </ul>
+
+    <h3>Touchers vaginaux &amp; gestes</h3>
+    <ul class="plain-list">
+      <li class="strict">Vaginisme connu — merci de limiter les touchers vaginaux au strict nécessaire médical</li>
+      <li class="soft">Pause possible si l'inconfort est trop important</li>
+      <li class="strict">Avant tout geste : pourquoi, bénéfices, risques, alternatives, urgence</li>
+      <li>Le papa inclus dans les échanges et relais des préférences si nécessaire</li>
+    </ul>
+  </section>
+
+  <section id="environnement" class="card">
+    <h2><span class="num"><svg class="icon"><use href="#icon-moon"/></svg></span>Environnement &amp; mouvement</h2>
+
+    <h3>Ambiance de la salle</h3>
+    <ul class="plain-list two-col-list">
+      <li>Lumière tamisée</li>
+      <li>Ambiance calme, échanges utiles</li>
+      <li>Pas de musique</li>
+      <li>Usage limité du téléphone</li>
+      <li>Pas de photos ni de vidéos</li>
+      <li>Température ajustable</li>
+      <li>Tenue confortable, blouse si besoin</li>
+      <li>Objets utiles : coussin, ballon, huile de massage, brume d'eau</li>
+      <li>Éviter les parfums forts</li>
+    </ul>
+
+    <h3>Mouvement &amp; positions</h3>
+    <ul class="plain-list">
+      <li class="strict">Liberté de mouvement maximale</li>
+      <li>Ballon si disponible</li>
+      <li class="soft">Baignoire / douche / salle nature si possible</li>
+      <li>Positions proposées selon la phase du travail</li>
+      <li>Papa présent en continu</li>
+      <li>Le papa aide avec la respiration, le massage, l'eau sucrée, l'aide aux positions</li>
+    </ul>
+  </section>
+
+  <section id="travail" class="card">
+    <h2><span class="num"><svg class="icon"><use href="#icon-wind"/></svg></span>Pendant le travail</h2>
+    <ul class="plain-list">
+      <li class="strict">Liberté de mouvement maximale tant que cela reste compatible avec la sécurité</li>
+      <li>Monitoring adapté au contexte</li>
+      <li class="soft">Éviter la perfusion si possible ; accès veineux seulement si nécessaire</li>
+      <li class="soft">Éviter la rupture artificielle de la poche des eaux tant que possible</li>
+      <li>Ocytocine seulement si nécessaire</li>
+      <li>Temps laissé au travail physiologique quand la situation le permet</li>
+      <li class="strict">Information avant chaque geste</li>
+    </ul>
+  </section>
+
+  <section id="douleur" class="card">
+    <h2><span class="num"><svg class="icon"><use href="#icon-drop"/></svg></span>Face à la douleur</h2>
+    <p>Approche progressive : méthodes naturelles d'abord, options médicales si besoin. Objectif : tenir le plus longtemps possible sans péridurale, selon l'évolution du travail.</p>
+
+    <h3>Méthodes proposées</h3>
+    <ul class="plain-list two-col-list">
+      <li>Respiration guidée</li>
+      <li>Massages</li>
+      <li>Chaleur locale</li>
+      <li>Eau (douche, baignoire)</li>
+      <li>Mouvement, positions, ballon</li>
+      <li>Boisson sucrée</li>
+    </ul>
+
+    <div class="priority3">
+      <span class="priority3-label">Top 3 priorités</span>
+      <div class="priority3-items">
+        <span>Mouvement et marche</span>
+        <span>Positions variées</span>
+        <span>Ballon</span>
+      </div>
+    </div>
+    <p>Le papa guide la respiration et propose les changements de position.</p>
+
+    <h3>Péridurale</h3>
+    <ul class="plain-list">
+      <li>Possible si la douleur devient trop intense</li>
+      <li>L'équipe peut vérifier régulièrement le souhait, sans insister inutilement</li>
+      <li>Nos inquiétudes : perte de mobilité, effets secondaires</li>
+      <li class="strict">Avant la pose : explication simple sur bénéfices, limites, risques, alternatives</li>
+    </ul>
+
+    <h3>Si la péridurale est impossible, retardée ou inefficace</h3>
+    <ul class="plain-list">
+      <li>Positions, eau, chaleur, soutien rapproché</li>
+      <li>Évaluation régulière de la douleur</li>
+      <li>Encouragements fréquents</li>
+      <li>Une seule personne référente en phase très douloureuse</li>
+    </ul>
+  </section>
+
+  <section id="urgence" class="card accent-card">
+    <h2><span class="num"><svg class="icon"><use href="#icon-shield"/></svg></span>En cas d'imprévu</h2>
+    <p>Nous restons ouverts à l'adaptation si la sécurité de la maman ou du bébé l'exige. En situation urgente, une explication courte avant le geste suffit, avec un débrief complet une fois la situation stabilisée.</p>
+  </section>
+
+  <section id="naissance" class="card">
+    <h2><span class="num"><svg class="icon"><use href="#icon-spark"/></svg></span>Naissance</h2>
+    <ul class="plain-list">
+      <li class="strict">Naissance par voie basse, sans instrument, sans épisiotomie si possible</li>
+      <li>Poussées spontanées</li>
+      <li>Positions confortables</li>
+      <li>Papa à côté de la maman</li>
+      <li class="soft">Possibilité de miroir si utile</li>
+      <li>Papa accueille le bébé dès sa sortie</li>
+      <li>Clampage tardif du cordon</li>
+      <li class="strict">Pas d'expressions abdominales</li>
+      <li class="soft">Pas d'instruments si possible</li>
+    </ul>
+  </section>
+
+  <section id="cesarienne" class="card accent-card">
+    <h2><span class="num"><svg class="icon"><use href="#icon-cross"/></svg></span>Si césarienne éventuelle</h2>
+    <ul class="plain-list">
+      <li>Explication claire avant la décision, si possible</li>
+      <li>Papa présent si possible</li>
+      <li>Cadre calme, pas de photos</li>
+      <li>Contact visuel avec le bébé dès que possible</li>
+      <li>Peau-à-peau dès que possible</li>
+      <li>Le papa ou une personne de confiance suit le bébé si besoin</li>
+    </ul>
+  </section>
+
+  <section id="premiers-instants" class="card">
+    <h2><span class="num"><svg class="icon"><use href="#icon-heart"/></svg></span>Premiers instants avec le bébé</h2>
+    <ul class="plain-list two-col-list">
+      <li>Peau-à-peau dès que possible</li>
+      <li>Séchage doux</li>
+      <li>Bonnet et couverture si utile</li>
+      <li>Soins expliqués avant et pendant</li>
+      <li>Pesée et mesure si nécessaires</li>
+      <li>Aspiration si nécessaire</li>
+      <li>Bain différé si possible</li>
+      <li>Présence des parents pendant les soins</li>
+      <li class="strict">Éviter la séparation sauf si indispensable</li>
+    </ul>
+  </section>
+
+  <section id="alimentation" class="card">
+    <h2><span class="num"><svg class="icon"><use href="#icon-leaf"/></svg></span>Alimentation</h2>
+    <ul class="plain-list">
+      <li class="strict">Allaitement maternel exclusif et accompagné</li>
+      <li>Aide à l'allaitement si nécessaire</li>
+      <li>Alternatives proposées sans pression en cas de difficulté</li>
+    </ul>
+  </section>
+
+  <section id="suites" class="card">
+    <h2><span class="num"><svg class="icon"><use href="#icon-moon"/></svg></span>Suites de couches</h2>
+    <ul class="plain-list">
+      <li>Repos serein</li>
+      <li>Présence rassurante du papa</li>
+      <li>Gestion douce de la douleur</li>
+      <li>Soutien à l'allaitement</li>
+      <li>Informations claires avant la sortie</li>
+    </ul>
+  </section>
+
+  <footer class="site-footer">
+    <p class="tone-note">Nous savons que chaque naissance est différente. Ce document est un point de départ — nous restons ouverts à l'adapter avec vous.</p>
+    <p class="fine-print">Langue : français · Prénom du bébé non affiché, nous gardons la surprise · Version privée complète, non indexée · Pas de coordonnées affichées.</p>
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
