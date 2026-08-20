@@ -633,118 +633,258 @@ main {
 @media print {
   @page {
     size: A4 portrait;
-    margin: 14mm 13mm;
+    margin: 10mm 9mm;
   }
 
   html,
   body {
     background: #fff !important;
-    font-size: 11pt;
+    font-size: 7.6pt;
   }
 
   .no-print {
     display: none !important;
   }
 
-  .cover {
-    box-shadow: none;
-    border: 1px solid #ddd0bc;
-    border-radius: 10px;
-    padding: 1rem 1.1rem;
-    break-after: page;
-    page-break-after: always;
+  .intro-banner {
+    background: none !important;
+    color: var(--ink) !important;
+    padding: 0 0 0.3rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 0.3rem;
   }
 
-  .cover::before {
+  .intro-banner p {
+    font-size: 9pt;
+  }
+
+  .site-header {
+    padding: 0.1rem 0 0.3rem;
+  }
+
+  .header-inner {
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 0.3rem;
+    align-items: baseline;
+  }
+
+  .eyebrow {
+    font-size: 6.2pt;
+    margin-bottom: 0.2rem;
+  }
+
+  .site-header h1 {
+    font-size: 18pt;
+    margin-bottom: 0.15rem;
+  }
+
+  .subtitle {
+    font-size: 8.2pt;
+  }
+
+  .toc {
     display: none;
   }
 
+  main {
+    display: block;
+    padding: 0;
+    column-count: 2;
+    column-gap: 6mm;
+    column-fill: auto;
+  }
+
+  .cover,
+  .card {
+    box-shadow: none;
+    border: 1px solid #ddd0bc;
+    border-radius: 6px;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    padding: 0.45rem 0.55rem;
+    margin-bottom: 0.35rem;
+  }
+
+  .cover::before,
+  .card::before {
+    display: none;
+  }
+
+  .cover-identity {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.15rem 0.7rem;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0.3rem;
+  }
+
+  .cover-identity div {
+    display: flex;
+    gap: 0.25em;
+    white-space: nowrap;
+  }
+
+  .cover-identity dt {
+    font-size: 7pt;
+  }
+
+  .cover-identity dt::after {
+    content: " :";
+  }
+
   .cover-identity dd {
-    font-size: 9.6pt;
+    font-size: 7.6pt;
+    font-weight: 600;
   }
 
   .need-line {
-    font-size: 10.5pt;
+    font-size: 9pt;
+    margin-bottom: 0.3rem;
   }
 
   .solution-line {
-    font-size: 9.6pt;
+    font-size: 8pt;
+    margin-bottom: 0;
   }
 
   .pillars {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+    margin-top: 0.4rem;
   }
 
   .pillar {
     break-inside: avoid;
     page-break-inside: avoid;
-    padding: 0.8rem 0.9rem;
+    padding: 0.35rem 0.5rem;
+    display: flex;
+    align-items: baseline;
+    gap: 0.4rem;
+    flex-wrap: wrap;
   }
 
-  .pillar p {
-    font-size: 8.8pt;
-  }
-
-  .intro-banner {
-    background: none !important;
-    color: var(--ink) !important;
-    padding: 0 0 0.6rem;
-    border-bottom: 1px solid var(--line);
-    margin-bottom: 0.8rem;
-  }
-
-  .intro-banner p {
-    font-size: 0.95rem;
-  }
-
-  .site-header {
-    padding: 0.2rem 0 0.8rem;
-  }
-
-  .header-inner {
-    border-bottom: 1px solid var(--line);
-    padding-bottom: 0.8rem;
-  }
-
-  .site-header h1 {
-    font-size: 22pt;
-  }
-
-  main {
-    padding: 0;
-    gap: 0.5rem;
-  }
-
-  .card {
-    box-shadow: none;
-    border: 1px solid #ddd0bc;
-    padding: 0.85rem 1rem;
-    break-inside: avoid;
-    page-break-inside: avoid;
-    border-radius: 10px;
-  }
-
-  .card::before {
+  .pillar-icon {
     display: none;
   }
 
+  .pillar h3 {
+    font-size: 8.4pt;
+    margin: 0;
+    flex-shrink: 0;
+  }
+
+  .pillar h3::after {
+    content: " —";
+  }
+
+  .pillar p {
+    font-size: 7.8pt;
+    display: inline;
+  }
+
+  .num {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .num .icon {
+    width: 0.68rem;
+    height: 0.68rem;
+  }
+
   .card h2 {
-    font-size: 13pt;
+    font-size: 10.6pt;
+    gap: 0.4rem;
+    margin-bottom: 0.3rem;
   }
 
   .card h3 {
-    font-size: 11pt;
-    margin: 0.7rem 0 0.35rem;
+    font-size: 8.4pt;
+    margin: 0.4rem 0 0.15rem;
   }
 
-  .card p,
-  .plain-list li {
-    font-size: 9.6pt;
+  .card h3:first-of-type {
+    margin-top: 0.2rem;
+  }
+
+  .section-lead {
+    font-size: 7.8pt;
+    margin-top: -0.1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .card p {
+    font-size: 7.8pt;
     color: #000;
+    margin-bottom: 0.3rem;
+  }
+
+  .plain-list {
+    gap: 0.14rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .plain-list li {
+    font-size: 7.8pt;
+    color: #000;
+    padding-left: 0.7rem;
+  }
+
+  .plain-list li::before {
+    width: 4px;
+    height: 4px;
+    top: 0.45em;
   }
 
   .two-col-list {
-    column-count: 2;
+    column-count: 1;
+  }
+
+  .two-col {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+    margin: 0.3rem 0;
+  }
+
+  .pill-box {
+    padding: 0.4rem 0.5rem;
+    border-radius: 8px;
+  }
+
+  .pill-box h3 {
+    font-size: 8pt !important;
+    margin-top: 0 !important;
+  }
+
+  .callout-line {
+    font-size: 8pt;
+    padding-left: 0.5rem;
+  }
+
+  .priority3 {
+    padding: 0.35rem 0.5rem;
+    gap: 0.4rem;
+    margin: 0.3rem 0;
+  }
+
+  .priority3-label {
+    font-size: 6.4pt;
+  }
+
+  .priority3-items {
+    gap: 0.25rem;
+  }
+
+  .priority3-items span {
+    font-size: 7.4pt;
+    padding: 0.1rem 0.35rem;
+  }
+
+  .fine-print {
+    font-size: 6.4pt;
+    padding-top: 0.3rem;
+    margin-top: 0.3rem !important;
   }
 
   a {
@@ -753,6 +893,13 @@ main {
   }
 
   .site-footer {
-    padding: 1rem 0 0;
+    padding: 0.4rem 0 0;
+    margin-top: 0.3rem;
+    break-inside: avoid;
+  }
+
+  .tone-note {
+    font-size: 8.2pt;
+    margin-bottom: 0.2rem;
   }
 }
